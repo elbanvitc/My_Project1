@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".St_profile_page"
+        android:theme="@style/main_blue_cover_style">
+
+        <ImageView
+            android:id="@+id/st_profile_activity_iv_stadium_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_stadium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_stadium_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadium name"
+            app:layout_constraintBottom_toBottomOf="@+id/st_profile_activity_iv_stadium_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0022"
+            app:layout_constraintStart_toStartOf="@+id/st_profile_activity_iv_stadium_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.938" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_stadium_mander_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="manager name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_stadium_image"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_stadium_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadium location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_stadium_manger_phone2"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_stadium_manger_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="0102356544"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_stadium_image"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_stadium_manger_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="0102356544"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_stadium_manger_phone1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_on_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON duration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_image1"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_on_duration2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Hour Price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_duration_end"
+            app:layout_constraintVertical_bias="0.386" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_duration_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_duration_start" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_tv_duration_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:text="  from  "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_on_duration"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_iv_share_stadium_location"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_map_location_share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/st_profile_activity_tv_stadium_location"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_stadium_manger_phone2"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_image3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_share_stadium_location"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_image2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintEnd_toStartOf="@+id/st_profile_activity_image1"
+            app:layout_constraintStart_toEndOf="@+id/st_profile_activity_image3"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_share_stadium_location"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_image1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_add_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_share_stadium_location" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_et_duration_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_on_duration"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_et_duration_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_et_duration_start" />
+
+        <TextView
+            android:id="@+id/st_profile_activity_et_duration_end2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_et_duration_end"
+            app:layout_constraintVertical_bias="0.386" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/st_profile_activity_et_duration_end2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_et_duration_end" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/st_profile_activity_tv_on_duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_image2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/st_profile_activity_tv_stadium_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_stadium_manger_phone2" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_iv_clender"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintStart_toStartOf="@+id/st_profile_activity_iv_stadium_image"
+            app:layout_constraintTop_toTopOf="@+id/st_profile_activity_iv_stadium_image" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_tv_stadium_call_manger_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/st_profile_activity_tv_stadium_manger_phone1"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_iv_stadium_image"
+            app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
+
+        <ImageView
+            android:id="@+id/st_profile_activity_tv_stadium_call_manger_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toEndOf="@+id/st_profile_activity_tv_stadium_manger_phone2"
+            app:layout_constraintTop_toBottomOf="@+id/st_profile_activity_tv_stadium_call_manger_phone1"
+            app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

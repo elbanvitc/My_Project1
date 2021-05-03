@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="personOpject"
+    type="com.example.myproject.Class_Person" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Login_Activity"
+        android:theme="@style/main_blue_cover_style"
+
+        >
+
+        <EditText
+            android:id="@+id/loginActivityEtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:text="@{personOpject.password}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityEtUserName"
+            app:layout_constraintVertical_bias="0.161" />
+
+        <EditText
+            android:id="@+id/loginActivityEtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your user name ..."
+            android:inputType="textEmailAddress"
+            android:text="@{personOpject.user_name}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_tv_show"
+            app:layout_constraintVertical_bias="0.367" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_tv_show"
+            app:layout_constraintVertical_bias="0.367" />
+
+        <TextView
+            android:id="@+id/loginActivityTvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_tv_user_name"
+            app:layout_constraintVertical_bias="0.187" />
+
+        <TextView
+            android:id="@+id/login_tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Login  "
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/login_activity_tv_creat_new_accont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="creat new account"
+            android:textColor="@color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_password"
+            app:layout_constraintVertical_bias="0.886" />
+
+        <Button
+            android:id="@+id/login_activity_btn_done_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/holo_blue_light"
+            android:text="LOGIN"
+            app:layout_constraintBottom_toTopOf="@+id/login_activity_tv_creat_new_accont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityEtPassword"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/login_activity_btn_regist_as_stadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/holo_blue_light"
+            android:text="stadium"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/login_activity_tv_creat_new_accont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.861"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_activity_btn_done_login"
+            app:layout_constraintVertical_bias="0.193"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/login_activity_btn_regist_as_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/holo_blue_light"
+            android:text="player"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/login_activity_tv_creat_new_accont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_activity_btn_done_login"
+            app:layout_constraintVertical_bias="0.193"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

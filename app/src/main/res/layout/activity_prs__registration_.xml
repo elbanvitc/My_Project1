@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/main_blue_cover_style"
+        tools:context=".Prs_Registration_Activity">
+
+        <ImageView
+            android:id="@+id/prs_registration_activity_iv_enter_your_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/holo_blue_light"
+            android:src="@drawable/ic_add_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99999"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.322" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9999"
+            app:layout_constraintStart_toEndOf="@+id/prs_registration_activity_et_date_of_birth"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_tv_name"
+            app:layout_constraintVertical_bias="0.155" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Numper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9999"
+            app:layout_constraintStart_toEndOf="@+id/prs_registration_activity_et_phone_num"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_tv_date_of_birth"
+            app:layout_constraintVertical_bias="0.204" />
+
+        <EditText
+            android:id="@+id/prs_registration_activity_et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter your name ..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/prs_registration_activity_et_date_of_birth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_iv_enter_your_image"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <EditText
+            android:id="@+id/prs_registration_activity_et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="creat your password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_user_name"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/prs_registration_activity_et_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="creat your user name ..."
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/prs_registration_activity_et_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_phone_num"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <EditText
+            android:id="@+id/prs_registration_activity_et_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter your phone numper..."
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/prs_registration_activity_et_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_date_of_birth"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <EditText
+            android:id="@+id/prs_registration_activity_et_date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter your birth day ..."
+            android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/prs_registration_activity_et_phone_num"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_name"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9999"
+            app:layout_constraintStart_toEndOf="@+id/prs_registration_activity_et_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_tv_phone_num"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9999"
+            app:layout_constraintStart_toEndOf="@+id/prs_registration_activity_et_password"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_tv_user_name"
+            app:layout_constraintVertical_bias="0.496" />
+
+        <TextView
+            android:id="@+id/prs_registration_activity_tv_enter_your_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9999"
+            app:layout_constraintStart_toEndOf="@+id/prs_registration_activity_iv_enter_your_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/prs_registration_activity_fabtn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            app:backgroundTint="@color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_registration_activity_et_password"
+            app:layout_constraintVertical_bias="0.8"
+            app:srcCompat="@android:drawable/ic_menu_directions" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

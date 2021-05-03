@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/main_blue_cover_style"
+        tools:context=".St_Registartion_Activity">
+
+
+        <ImageView
+            android:id="@+id/st_registartion_activity_iv_stadium_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_add_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/st_registartion_activity_et_stadium_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your stadium name"
+            app:layout_constraintBottom_toBottomOf="@+id/st_registartion_activity_iv_stadium_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.938" />
+
+        <EditText
+            android:id="@+id/st_registartion_registartion_et_stadium_manger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter your name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_iv_stadium_image"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_tv_stadium_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadium location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_et_stadium_manger_phone2"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <EditText
+            android:id="@+id/st_registartion_activity_et_stadium_manger_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone numper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_iv_stadium_image"
+            app:layout_constraintVertical_bias="0" />
+
+        <EditText
+            android:id="@+id/st_registartion_activity_et_stadium_manger_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter second phone numper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_et_stadium_manger_phone1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_tv_on_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON duration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_image1"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_tv_on_duration2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Hour Price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_tv_duration_end"
+            app:layout_constraintVertical_bias=".007" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_tv_duration_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_tv_duration_start" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_tv_duration_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:text="  from  "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_tv_on_duration"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <ImageView
+            android:id="@+id/st_registartion_activity_iv_share_stadium_location"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/st_registartion_activity_tv_stadium_location"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_et_stadium_manger_phone2"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <ImageView
+            android:id="@+id/st_registartion_activity_image3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_iv_share_stadium_location"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageView
+            android:id="@+id/st_registartion_activity_image2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintEnd_toStartOf="@+id/st_registartion_activity_image1"
+            app:layout_constraintStart_toEndOf="@+id/st_registartion_activity_image3"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_iv_share_stadium_location"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageView
+            android:id="@+id/st_registartion_activity_image1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_add_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_iv_share_stadium_location" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_et_duration_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="time"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_tv_on_duration"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/st_registartion_activity_et_duration_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="time"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_et_duration_start" />
+
+        <EditText
+            android:id="@+id/st_registartion_activity_et_hour_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_et_duration_end"
+            app:layout_constraintVertical_bias=".007" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/st_registartion_activity_fabtn_done"
+            android:layout_width="49dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/st_registartion_activity_tv_on_duration2"
+            app:srcCompat="@android:drawable/ic_menu_directions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

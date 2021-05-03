@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/main_blue_cover_style"
+        tools:context=".Make_Appointment">
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Make An Appointment"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_tv_time_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  FROM  :"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_tv_show"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_tv_time_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  TO :    "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_tv_time_from"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  DATE :  "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_tv_time_to"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_tv_num_of_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numper of players"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_tv_date"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/prs_make_appointment_activity_map_of_stadiums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_et_time_date"
+            app:layout_constraintVertical_bias="0.573" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_et_time_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.757"
+            app:layout_constraintStart_toEndOf="@+id/prs_make_appointment_activity_tv_time_from"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_tv_show"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_et_time_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/prs_make_appointment_activity_tv_time_to"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_et_time_from"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/prs_make_appointment_activity_et_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.908"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_et_time_to"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/prs_make_appointment_activity_fabtn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="@color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_map_of_stadiums"
+            app:layout_constraintVertical_bias="0.8"
+            app:srcCompat="@android:drawable/ic_menu_directions"
+
+
+            />
+
+        <EditText
+            android:id="@+id/prs_make_appointment_activity_et_num_of_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:hint="..."
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toEndOf="@+id/prs_make_appointment_activity_tv_num_of_players"
+            app:layout_constraintTop_toBottomOf="@+id/prs_make_appointment_activity_et_time_date"
+            app:layout_constraintVertical_bias="0.069"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
